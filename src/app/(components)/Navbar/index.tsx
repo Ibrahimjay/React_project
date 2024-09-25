@@ -13,7 +13,7 @@ const Navbar = () => {
           <Menu className="w-4 h-4 " />
         </button>
        
-        <div className="relative">g
+        <div className="relative">
           <input
             type="search"
             placeholder="Start type to search groups & products" 
