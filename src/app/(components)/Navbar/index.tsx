@@ -26,10 +26,13 @@ const Navbar = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="flex items-center w-0.5 flex-shrink-0 gap-5 bg-blue-100">
-        <button onClick={() => {}}>
+      <div className="flex justify-between items-center gap-5">
+       <div className="hidden md:flex justify-between items-center gap-5">
+        <div>
+          <button onClick={() => {}}>
           <Sun className="cursor-pointer text-gray-500" size={24} />
-        </button>
+          </button>
+        </div>
         
         <div className="relative">
           <Bell className="cursor-pointer text-gray-500" size={24} />
@@ -38,14 +41,13 @@ const Navbar = () => {
           </span>
         </div>
 
-        <hr className="h-7 border border-gray-300 mx-3" />
+        <hr className="h-7 border border-solid border-l border-gray-300 mx-3" />
 
         <div className="flex items-center gap-3 cursor-pointer">
           <div className="w-9 h-9 bg-gray-200">image</div>
           <span className="font-semibold">Ed Roh</span>
         </div>
-
-        {/* Use an anchor or next/link */}
+        </div>
         <a href="/settings">
           <Settings className="cursor-pointer text-gray-500" size={24} />
         </a>

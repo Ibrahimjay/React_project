@@ -26,11 +26,11 @@ const shadeMapping = {
   "900": "50",
 };
 
-const generateThemeObject = (colors: any, mapping: any, invert = false) => {
+const generateThemeObject = (colors: any , mapping: any , invert = false) => {
   const theme: any = {};
   baseColors.forEach((color) => {
     theme[color] = {};
-    Object.entries(mapping).forEach(([key, value]: any) => {
+    Object.entries(mapping).forEach(([key, value]: any ) => {
       const shadeKey = invert ? value : key;
       theme[color][key] = colors[color][shadeKey];
     });
